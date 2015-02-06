@@ -1,0 +1,35 @@
+<html>
+<head>
+  <title></title>
+  <script type="text/javascript">
+var array = [34, 203, 3, 746, 200, 984, 198, 764, 9, 100000, 1, 2, 3, 4, 5];
+
+function swap(items, a, b){
+    var temp = items[a];
+    items[a] = items[b];
+    items[b] = temp;
+}
+
+
+function bubbleSort(items){
+
+    for (i=0; i < items.length; i++){
+        for (j=0; j < items.length; j++){
+            if (items[j] > items[j+1]){
+                swap(items, j, j+1);
+            }
+        }
+    }
+
+    return items;
+}
+console.log(array)
+bubbleSort(array);
+console.log(array);
+  </script>
+</head>
+<body>
+
+</body>
+</html>
+
